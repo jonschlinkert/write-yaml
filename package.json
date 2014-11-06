@@ -1,7 +1,7 @@
 {
   "name": "write-yaml",
-  "description": "Basic node.js utility for converting JSON to YAML and writing formatting YAML files to disk.",
-  "version": "0.1.1",
+  "description": "Write YAML. Converts JSON to YAML writes it to the specified file.",
+  "version": "0.1.2",
   "homepage": "https://github.com/jonschlinkert/write-yaml",
   "author": {
     "name": "Jon Schlinkert",
@@ -39,12 +39,11 @@
     "mocha": "*",
     "read-yaml": "^0.2.0",
     "should": "^4.0.4",
-    "verb": "~0.2.6",
-    "verb-tag-jscomments": "^0.1.2"
+    "verb": "~0.2.6"
   },
   "dependencies": {
-    "js-yaml": "^3.0.2",
-    "write": "^0.1.1",
-    "xtend": "^3.0.0"
+    "extend-shallow": "^0.1.1",
+    "js-yaml": "^3.2.2",
+    "write": "^0.1.1"
   }
 }
