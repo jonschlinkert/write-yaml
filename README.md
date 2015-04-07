@@ -31,10 +31,25 @@ node_js:
   - "0.11"
 ```
 
+## Other data utils
+ * [plasma](https://github.com/jonschlinkert/plasma): Load data from globs or files or directly from objects.
+ * [write-json](https://github.com/jonschlinkert/write-json): Write a JSON to file disk, also creates directories in the dest path if they don't already exist.
+ * [map-files](https://github.com/jonschlinkert/map-files): Return an object for a glob of files. Pass a `rename` function for the keys, or a `parse` function for the content, allowing it to be used for readable or require-able files.
+
+## Running tests
+Install dev dependencies:
+
+```bash
+npm i -d && npm test
+```
+
+## Contributing
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/jonschlinkert/write-yaml/issues)
+
 ## Author
 
 **Jon Schlinkert**
- 
+
 + [github/jonschlinkert](https://github.com/jonschlinkert)
 + [twitter/jonschlinkert](http://twitter.com/jonschlinkert) 
 
