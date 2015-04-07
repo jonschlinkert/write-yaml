@@ -1,7 +1,7 @@
 {
   "name": "write-yaml",
   "description": "Write YAML. Converts JSON to YAML writes it to the specified file.",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "homepage": "https://github.com/jonschlinkert/write-yaml",
   "author": {
     "name": "Jon Schlinkert",
@@ -29,14 +29,14 @@
     "test": "mocha"
   },
   "dependencies": {
-    "extend-shallow": "^0.1.1",
-    "js-yaml": "^3.2.2",
-    "write": "^0.1.1"
+    "extend-shallow": "^1.1.2",
+    "js-yaml": "^3.2.7",
+    "write": "^0.2.0"
   },
   "devDependencies": {
-    "mocha": "*",
-    "read-yaml": "^0.2.0",
-    "should": "^4.0.4"
+    "mocha": "^2.2.1",
+    "read-yaml": "^1.0.0",
+    "should": "^5.2.0"
   },
   "keywords": [
     "yaml",
