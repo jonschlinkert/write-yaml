@@ -14,12 +14,30 @@
   "bugs": {
     "url": "https://github.com/jonschlinkert/write-yaml/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/jonschlinkert/write-yaml/blob/master/LICENSE-MIT"
-    }
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/jonschlinkert/write-yaml/blob/master/LICENSE"
+  },
+  "files": [
+    "index.js"
   ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "extend-shallow": "^0.1.1",
+    "js-yaml": "^3.2.2",
+    "write": "^0.1.1"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "read-yaml": "^0.2.0",
+    "should": "^4.0.4"
+  },
   "keywords": [
     "yaml",
     "json",
@@ -27,23 +45,5 @@
     "write",
     "format",
     "data"
-  ],
-  "main": "index.js",
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "mocha -R spec"
-  },
-  "devDependencies": {
-    "mocha": "*",
-    "read-yaml": "^0.2.0",
-    "should": "^4.0.4",
-    "verb": "~0.2.6"
-  },
-  "dependencies": {
-    "extend-shallow": "^0.1.1",
-    "js-yaml": "^3.2.2",
-    "write": "^0.1.1"
-  }
+  ]
 }

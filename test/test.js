@@ -1,8 +1,8 @@
-/**
- * write-file <https://github.com/assemble/write-file>
+/*!
+ * write-yaml <https://github.com/jonschlinkert/write-yaml>
  *
- * Copyright (c) 2014 Jon Schlinkert, contributors.
- * Licensed under the MIT license.
+ * Copyright (c) 2014-2015, Jon Schlinkert.
+ * Licensed under the MIT License.
  */
 
 'use strict';
