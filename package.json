@@ -1,7 +1,7 @@
 {
   "name": "write-yaml",
   "description": "Write YAML. Converts JSON to YAML writes it to the specified file.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/jonschlinkert/write-yaml",
   "author": {
     "name": "Jon Schlinkert",
