@@ -14,10 +14,7 @@
   "bugs": {
     "url": "https://github.com/jonschlinkert/write-yaml/issues"
   },
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/jonschlinkert/write-yaml/blob/master/LICENSE"
-  },
+  "license": "MIT",
   "files": [
     "index.js"
   ],
@@ -29,14 +26,14 @@
     "test": "mocha"
   },
   "dependencies": {
-    "extend-shallow": "^1.1.2",
-    "js-yaml": "^3.2.7",
+    "extend-shallow": "^1.1.4",
+    "js-yaml": "^3.3.1",
     "write": "^0.2.0"
   },
   "devDependencies": {
-    "mocha": "^2.2.1",
+    "mocha": "^2.2.5",
     "read-yaml": "^1.0.0",
-    "should": "^5.2.0"
+    "should": "^6.0.3"
   },
   "keywords": [
     "yaml",
