@@ -7,17 +7,15 @@
 
 'use strict';
 
-var extend = require('extend-shallow');
-var writeFile = require('write');
-var YAML = require('js-yaml');
+var utils = require('./utils');
 
 var defaults = {
-  indent:  2,
-  skipInvalid:  false,
+  indent: 2,
+  skipInvalid: false,
   flowLevel: -1
 };
 
-module.exports = function (dest, data, opts, cb) {
+module.exports = function(dest, data, opts, cb) {
   if (typeof opts === 'function') {
     cb = opts;
     opts = {};
@@ -33,10 +31,10 @@ module.exports = function (dest, data, opts, cb) {
     return cb(new TypeError('write-yaml async expects data to be an object.'));
   }
 
-  opts = extend({}, defaults, opts);
-  var yaml = opts.safe ? YAML.safeDump : YAML.dump;
+  opts = utils.extend({}, defaults, opts);
+  var yaml = opts.safe ? utils.YAML.safeDump : utils.YAML.dump;
 
-  writeFile(dest, yaml(data, opts), cb);
+  utils.writeFile(dest, yaml(data, opts), cb);
 };
 
 module.exports.sync = function(dest, data, opts) {
@@ -47,11 +45,11 @@ module.exports.sync = function(dest, data, opts) {
     throw new TypeError('write-yaml expects data to be an object.');
   }
 
-  opts = extend({}, defaults, opts);
-  var yaml = opts.safe ? YAML.safeDump : YAML.dump;
+  opts = utils.extend({}, defaults, opts);
+  var yaml = opts.safe ? utils.YAML.safeDump : utils.YAML.dump;
 
   try {
-    return writeFile.sync(dest, yaml(data, opts));
+    return utils.writeFile.sync(dest, yaml(data, opts));
   } catch (err) {
     err.message = 'write-yaml: failed to write "' + dest + '": ' + err.message;
     throw err;
