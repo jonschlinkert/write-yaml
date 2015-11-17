@@ -1,7 +1,7 @@
 {
   "name": "write-yaml",
   "description": "Write YAML. Converts JSON to YAML writes it to the specified file.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "homepage": "https://github.com/jonschlinkert/write-yaml",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/write-yaml",
@@ -23,6 +23,7 @@
   "dependencies": {
     "extend-shallow": "^2.0.1",
     "js-yaml": "^3.4.3",
+    "lazy-cache": "^0.2.4",
     "write": "^0.2.1"
   },
   "devDependencies": {
