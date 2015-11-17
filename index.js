@@ -7,9 +7,9 @@
 
 'use strict';
 
-var YAML = require('js-yaml');
-var writeFile = require('write');
 var extend = require('extend-shallow');
+var writeFile = require('write');
+var YAML = require('js-yaml');
 
 var defaults = {
   indent:  2,
