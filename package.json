@@ -4,14 +4,17 @@
   "version": "0.2.2",
   "homepage": "https://github.com/jonschlinkert/write-yaml",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "contributors": [
+    "Jon Schlinkert <jon.schlinkert@sellside.com> (http://twitter.com/jonschlinkert)",
+    "Shinnosuke Watanabe <snnskwtnb@gmail.com> (https://shinnn.github.io)"
+  ],
   "repository": "jonschlinkert/write-yaml",
   "bugs": {
     "url": "https://github.com/jonschlinkert/write-yaml/issues"
   },
   "license": "MIT",
   "files": [
-    "index.js",
-    "utils.js"
+    "index.js"
   ],
   "main": "index.js",
   "engines": {
@@ -27,7 +30,6 @@
     "write": "^0.2.1"
   },
   "devDependencies": {
-    "mocha": "*",
     "read-yaml": "^1.0.0",
     "should": "*"
   },
@@ -42,12 +44,12 @@
   "verb": {
     "related": {
       "list": [
-        "plasma",
         "delete",
-        "write-json",
-        "read-yaml",
+        "plasma",
+        "read-data",
         "read-json",
-        "read-data"
+        "read-yaml",
+        "write-json"
       ]
     }
   }
