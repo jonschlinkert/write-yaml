@@ -17,15 +17,15 @@ var should = require('should');
 
 var files = ['tmp/a.md', 'tmp/b.md', 'tmp/c.md', 'tmp/d.md', 'tmp/e.md'];
 
-describe('sync', function () {
-  it('should write a yaml file synchronously', function () {
+describe('sync', function() {
+  it('should write a yaml file synchronously', function() {
     writeYaml.sync('test/actual/a.yml', {a: {b: {c: {d: 'e'}}}});
     var json = readYaml.sync('test/actual/a.yml');
     json.a.should.have.property('b');
     json.a.b.should.have.property('c');
   });
 
-  it('should use specified indentation.', function () {
+  it('should use specified indentation.', function() {
     writeYaml.sync('test/actual/b.yml', {a: {b: {c: {d: 'e'}}}}, {indent: 4});
     var str = fs.readFileSync('test/actual/b.yml', 'utf8');
     var secondLine = str.split('\n')[1];
@@ -34,9 +34,9 @@ describe('sync', function () {
   });
 });
 
-describe('async', function () {
-  it('should write a yaml file asynchronously', function (cb) {
-    writeYaml('test/actual/a.yml', {a: {b: {c: {d: 'e'}}}}, function (err) {
+describe('async', function() {
+  it('should write a yaml file asynchronously', function(cb) {
+    writeYaml('test/actual/a.yml', {a: {b: {c: {d: 'e'}}}}, function(err) {
       if (err) {
         console.log(err);
         return cb(err);
@@ -48,8 +48,8 @@ describe('async', function () {
     });
   });
 
-  it('should use specified indentation.', function (cb) {
-    writeYaml('test/actual/b.yml', {a: {b: {c: {d: 'e'}}}}, {indent: 4}, function (err) {
+  it('should use specified indentation.', function(cb) {
+    writeYaml('test/actual/b.yml', {a: {b: {c: {d: 'e'}}}}, {indent: 4}, function(err) {
       if (err) {
         console.log(err);
         return cb(err);
